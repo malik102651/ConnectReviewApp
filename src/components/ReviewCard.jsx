@@ -2,7 +2,7 @@ import { Card, CardContent, Typography, Box, Avatar, Rating, Button, Dialog, Dia
 import { CheckCircle, ThumbsUp, Share2, Flag, Trash2, Facebook, Twitter, Link as LinkIcon } from "lucide-react";
 import { useState, useEffect } from "react";
 import toast from 'react-hot-toast';
-import Logo from '../assets/lightIcon.png';
+import Logo from '../assets/LogoBg.png';
 
 export default function ReviewCard({ review, onReviewDeleted }) {
   const [isLiked, setIsLiked] = useState(false);
@@ -332,20 +332,25 @@ export default function ReviewCard({ review, onReviewDeleted }) {
             {/* Company Reply Header */}
             <Box sx={{ display: 'flex', alignItems: 'flex-start', mb: 2 }}>
               <Avatar
-                src={Logo}
+                src={ Logo }
+                alt="Connect Realm Logo"
                 onContextMenu={(e) => e.preventDefault()}
                 sx={{ 
-                  bgcolor: 'linear-gradient(135deg, #1e88e5 0%, #1565c0 100%)',
+                  width: 60,
+                  height: 60,
+                  bgcolor: '#ffffff',
+                  border: '1px solid #d0d0d0',
+                  '& img': {
+                    objectFit: 'contain',
+                    padding: '6px',
+                  },
                   color: '#ffffff',
-                  width: 40,
-                  height: 40,
                   mr: 1.5,
                   fontWeight: 700,
-                  fontSize: '1rem',
                   userSelect: 'none',
                 }}
               >
-                LS
+                CR
               </Avatar>
               <Box sx={{ flex: 1 }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
