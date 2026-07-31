@@ -286,9 +286,9 @@ export default function ReviewCard({ review, onReviewDeleted }) {
             </Box>
             <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 2, fontSize: '0.85rem' }}>
               <Typography sx={{ color: '#888' }}>US - 1 review</Typography>
-              <Typography variant="caption" sx={{ color: '#888' }}>
+              {/* <Typography variant="caption" sx={{ color: '#888' }}>
                 {formatDate(review.createdAt)}
-              </Typography>
+              </Typography> */}
             </Box>
           </Box>
         </Box>
@@ -358,9 +358,9 @@ export default function ReviewCard({ review, onReviewDeleted }) {
                     Reply from Connect Realm
                   </Typography>
                 </Box>
-                <Typography variant="caption" sx={{ color: '#888' }}>
+                {/* <Typography variant="caption" sx={{ color: '#888' }}>
                   {formatDate(review.createdAt)}
-                </Typography>
+                </Typography> */}
               </Box>
             </Box>
             
